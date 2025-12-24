@@ -59,20 +59,21 @@ main .about p {
 }
 .skills .progress .progress-bar {
     height: 100%;
+    display: block;
     border-radius: 6px;
     transition: width 0.6s ease;
 }
 .skills .progress .progress-bar.html {
     width: 95%;
-    background-color: #e44d26;
+    background-color: #fa481b;
 }
 .skills .progress .progress-bar.css {
     width: 85%;
-    background-color: #264de4;
+    background-color: #355dff;
 }
 .skills .progress .progress-bar.responsive {
     width: 75%;
-    background-color: #ff9800;
+    background-color: #f7a224;
 }
 .skills .progress .progress-bar.github {
     width: 80%;
