@@ -61,6 +61,9 @@ main .about p {
         font-size: 18px;
     }
 }
+.service p {
+    line-height: 1.6;
+}
 /* end section service */
 /* start section skills */
 .skills {
