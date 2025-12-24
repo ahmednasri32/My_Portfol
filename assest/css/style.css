@@ -3,6 +3,7 @@
 /* start main styles */
 body {
     font-family: "Open Sans", sans-serif;
+    height: 2000px;
 }
 /* end main styles */
 /* start rulse styles */
@@ -19,7 +20,6 @@ ul,li {
 
 /* start header styles */
 .header {
-    background-color: #f4f4f4;
     padding: 20px 0;
 }
 .header .logo {
@@ -33,7 +33,6 @@ main .about {
     width:60%;
     margin: 40px auto;
     padding: 20px;
-    background-color: #e2e2e2;
     border-radius: 8px;
 }
 main .about p {
@@ -42,41 +41,46 @@ main .about p {
     color: #333;
 }
 /* section about */
+/* start section services */
+.services .service {
+    padding: 10px;
+}
+/* end section service */
 /* start section skills */
 .skills {
-    margin-bottom:20px ;
+    color: white;
 }
 .skills p {
-    margin-bottom: 6px;
     font-weight: bold;
 }
 .skills .progress {
     max-width: 100%;
+    background-color: var(--bg-white-color);
     height: 12px;
-    background-color: #eee;
     border-radius: 6px;
     overflow: hidden;
 }
 .skills .progress .progress-bar {
     height: 100%;
     display: block;
-    border-radius: 6px;
-    transition: width 0.6s ease;
+    width: 0;
+    border-radius: 1px;
+    transition: width 1.6s ease-in-out;
 }
 .skills .progress .progress-bar.html {
-    width: 95%;
+    width: 0%;
     background-color: #fa481b;
 }
 .skills .progress .progress-bar.css {
-    width: 85%;
+    width: 0%;
     background-color: #355dff;
 }
 .skills .progress .progress-bar.responsive {
-    width: 75%;
+    width: 0%;
     background-color: #f7a224;
 }
 .skills .progress .progress-bar.github {
-    width: 80%;
-    background-color: #000;
+    width: 0%;
+    background-color: #271977;
 }
 /* end section skills */

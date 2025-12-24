@@ -19,8 +19,8 @@
 </head>
 <body>
     <header>
-        <div class="header">
-            <div class="container flex">
+        <div class="header bg-grey">
+            <div class="container flex between">
                 <div class="logo">portfolio</div>
                 <div class="social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -32,7 +32,7 @@
         </div>
     </header>
     <main>
-        <section class="about">
+        <section class="about bg-grey">
             <div class="container">
                 <h1>مرحباً، اسمي أحمد</h1>
                 <p>
@@ -42,27 +42,77 @@
                 </p>
             </div>
         </section>
-        <section class="skills">
-            <div class="container">
-                <h2 class="txt-c">مهاراتي</h2>
-                <p>HTML</p>
+        <section class="services bg-grey">
+            <div class="container pt-15 pb-20">
+               <h2 class="txt-c mb-15">خدماتي</h2>
+               <div class="services-box flex gap-15">
+                    <div class="service bg-white txt-c br-8">
+                        <h3 class="mb-15">تصميم واجهات</h3>
+                        <p>
+                        أصمم مواقع متجاوبة باحترافية تضمن تجربة استخدام سلسة وسريعة،
+                        وتعمل بكفاءة عالية على جميع الشاشات والأجهزة مهما اختلف حجمها.
+                        </p>
+                    </div>
+                    <div class="service bg-white txt-c br-8">
+                        <h3 class="mb-15">تصميم واجهات</h3>
+                        <p>
+                        أقدم تصاميم مواقع متجاوبة تركز على سهولة الاستخدام،
+                        والسرعة، والتوافق التام مع جميع الشاشات والأجهزة.
+                        </p>
+                    </div>
+                    <div class="service bg-white txt-c br-8">
+                        <h3 class="mb-15">تصميم واجهات</h3>
+                        <p>
+                        أصمم مواقع متجاوبة باحترافية تضمن تجربة استخدام سلسة وسريعة،
+                        وتعمل بكفاءة عالية على جميع الشاشات والأجهزة مهما اختلف حجمها.
+                        </p>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <section class="skills bg-b-dark mb-15">
+            <div class="container pt-15 pb-15">
+                <h2 class="txt-c mb-10">مهاراتي</h2>
+                <p class="mb-10 mt-10">HTML</p>
                 <div class="progress">
-                    <span class="progress-bar html" style="width: 90%"></span>
+                    <span class="progress-bar html" data-level="95"></span>
                 </div>
-                <p>CSS3</p>
+                <p class="mb-10 mt-10">CSS3</p>
                 <div class="progress">
-                    <span class="progress-bar css" style="width: 80%"></span>
+                    <span class="progress-bar css" data-level="85"></span>
                 </div>
-                <p>Responsive Design</p>
+                <p class="mb-10 mt-10">Responsive Design</p>
                 <div class="progress">
-                    <span class="progress-bar responsive" style="width: 75%"></span>
+                    <span class="progress-bar responsive" data-level="75"></span>
                 </div>
-                <p>Git & GitHub</p>
+                <p class="mb-10 mt-10">Git & GitHub</p>
                 <div class="progress">
-                    <span class="progress-bar github" style="width: 50%"></span>
+                    <span class="progress-bar github" data-level="50"></span>
                 </div>
             </div>
         </section>
     </main>
+    <!-- javs script code  -->
+<script>
+    function fillProgressBars() {
+        const skillsSection = document.querySelector('.skills');
+        if (!skillsSection) return;
+
+        const sectionPos = skillsSection.getBoundingClientRect().top;
+        const screenPos = window.innerHeight;
+
+        if (sectionPos < screenPos - 50) {
+            document.querySelectorAll('.progress-bar').forEach(bar => {
+                bar.style.width = bar.dataset.level + '%';
+            });
+            window.removeEventListener('scroll', fillProgressBars);
+        }
+    }
+
+    window.addEventListener('load', fillProgressBars);
+    window.addEventListener('scroll', fillProgressBars);
+</script>
+
+    <!-- javs script code  -->
 </body>
 </html>
