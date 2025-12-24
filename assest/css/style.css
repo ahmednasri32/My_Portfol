@@ -1,0 +1,38 @@
+
+
+/* main styles */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* main styles */
+
+/* rulse styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* rulse styles */
+
+/* header styles */
+.header {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+}
+.header .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+main .about {
+    width:60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+}
+main .about p {
+    font-size: 16px;
+    line-height:1.6;
+    color: #333;
+}
+/* header styles */

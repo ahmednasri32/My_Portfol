@@ -1,0 +1,15 @@
+/* main rules */
+* {
+    box-sizing: border-box;
+}
+/* main rules */
+/* component styles */
+.container {
+    width: 80%;
+    margin:0 auto;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+/* component styles */
