@@ -19,6 +19,9 @@
 .flex {
     display: flex;
 }
+.cntr {
+    align-items: center;
+}
 .between {
     justify-content: space-between;
 }

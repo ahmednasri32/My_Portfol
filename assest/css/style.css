@@ -35,6 +35,14 @@ main .about {
     padding: 20px;
     border-radius: 8px;
 }
+@media screen and (max-width: 768px) {
+    main .about {
+        width: 80%;
+    }
+    main .about h1 {
+        font-size: 25px;
+    }
+}
 main .about p {
     font-size: 16px;
     line-height:1.6;
@@ -44,6 +52,14 @@ main .about p {
 /* start section services */
 .services .service {
     padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    .services .services-box {
+    flex-direction: column;
+    }
+    .services .services-box  h3 {
+        font-size: 18px;
+    }
 }
 /* end section service */
 /* start section skills */
