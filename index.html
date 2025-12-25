@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <div class="header bg-grey">
+        <div class="header bg-b-dark">
             <div class="container flex between cntr">
                 <div class="logo">portfolio</div>
                 <div class="social">
@@ -32,9 +32,9 @@
         </div>
     </header>
     <main>
-        <section class="about bg-grey">
+        <section class="about bg-grey m-full flex cntr">
             <div class="container">
-                <h1>مرحباً، اسمي أحمد</h1>
+                <h1 class="mb-15 txt-c">hi my name is.. jons</h1>
                 <p>
                     شغوف بتعلّم تطوير الويب، بدأت رحلتي مع HTML و CSS،
                         وأعمل على تحويل الأفكار إلى صفحات ويب أنيقة ومتجاوبة.
@@ -42,35 +42,41 @@
                 </p>
             </div>
         </section>
-        <section class="services bg-grey">
-            <div class="container pt-15 pb-20">
-               <h2 class="txt-c mb-15">خدماتي</h2>
-               <div class="services-box flex gap-15">
-                    <div class="service bg-white txt-c br-8">
-                        <h3 class="mb-15">تصميم واجهات</h3>
-                        <p>
-                        أصمم مواقع متجاوبة باحترافية تضمن تجربة استخدام سلسة وسريعة،
-                        وتعمل بكفاءة عالية على جميع الشاشات والأجهزة مهما اختلف حجمها.
-                        </p>
-                    </div>
-                    <div class="service bg-white txt-c br-8">
-                        <h3 class="mb-15">تصميم واجهات</h3>
-                        <p>
-                        أقدم تصاميم مواقع متجاوبة تركز على سهولة الاستخدام،
-                        والسرعة، والتوافق التام مع جميع الشاشات والأجهزة.
-                        </p>
-                    </div>
-                    <div class="service bg-white txt-c br-8">
-                        <h3 class="mb-15">تصميم واجهات</h3>
-                        <p>
-                        أصمم مواقع متجاوبة باحترافية تضمن تجربة استخدام سلسة وسريعة،
-                        وتعمل بكفاءة عالية على جميع الشاشات والأجهزة مهما اختلف حجمها.
-                        </p>
-                    </div>
-               </div>
+    </main>
+    <section class="services bg-grey pt-20 pb-30">
+        <div class="container">
+            <h2 class="p-10 txt-c bg-blue white">خدماتي</h2>
+            <div class="services-box flex gap-15 p-10">
+                <div class="service txt-c p-10 br-5">
+                    <i class="fas fa-laptop-code fa-3x m-20"></i>
+                    <h3 class="mb-15">تصميم واجهات</h3>
+                    <p>
+                    أصمم مواقع متجاوبة باحترافية تضمن تجربة استخدام سلسة وسريعة،
+                    وتعمل بكفاءة عالية على جميع الشاشات والأجهزة مهما اختلف حجمها.
+                    </p>
+                </div>
+                
+                <div class="service bg-white txt-c br-5 p-10 bg-grey">
+                    <i class="fas fa-mobile-alt fa-3x m-20"></i>
+                    <h3 class="mb-15">تصميم واجهات</h3>
+                    <p>
+                    أقدم تصاميم مواقع متجاوبة تركز على سهولة الاستخدام،
+                    والسرعة، والتوافق التام مع جميع الشاشات والأجهزة.
+                    </p>
+                </div>
+                
+                <div class="service bg-white txt-c br-5 p-10 bg-grey">
+                    <i class="fas fa-code fa-3x m-20"></i>
+                    <h3 class="mb-15">تصميم واجهات</h3>
+                    <p>
+                    أصمم مواقع متجاوبة باحترافية تضمن تجربة استخدام سلسة وسريعة،
+                    وتعمل بكفاءة عالية على جميع الشاشات والأجهزة مهما اختلف حجمها.
+                    </p>
+                </div>
             </div>
-        </section>
-        <section class="skills bg-b-dark mb-15">
+        </div>
+    </section>
+    <section class="skills bg-b-dark br-8">
             <div class="container pt-15 pb-15">
                 <h2 class="txt-c mb-10">مهاراتي</h2>
                 <p class="mb-10 mt-10">HTML</p>
@@ -86,12 +92,42 @@
                     <span class="progress-bar responsive" data-level="75"></span>
                 </div>
                 <p class="mb-10 mt-10">Git & GitHub</p>
-                <div class="progress">
+                <div class="progress mb-15">
                     <span class="progress-bar github" data-level="50"></span>
                 </div>
             </div>
-        </section>
-    </main>
+    </section>
+    <section class="card bg-grey">
+            <div class="container pt-15 pb-15">
+                <h2 class="txt-c p-10 bg-blue white">بطاقة</h2>
+                <div class="card flex gap-15 cntr pt-10 pb-10">
+                    <div class="card-box">
+                        <img src="https://picsum.photos/400/300" alt="صورة">
+                        <div class="card-content p-16 txt-c">
+                            <h3>عنوان البطاقة</h3>
+                            <p>هذا وصف بسيط للكرت باستخدام CSS فقط.</p>
+                            <button class="br-8">المزيد</button>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="https://picsum.photos/400/300" alt="صورة">
+                        <div class="card-content p-16 txt-c">
+                            <h3>عنوان البطاقة</h3>
+                            <p>هذا وصف بسيط للكرت باستخدام CSS فقط.</p>
+                            <button class="br-8">المزيد</button>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <img src="https://picsum.photos/400/300" alt="صورة">
+                        <div class="card-content p-16 txt-c">
+                            <h3>عنوان البطاقة</h3>
+                            <p>هذا وصف بسيط للكرت باستخدام CSS فقط.</p>
+                            <button class="br-8">المزيد</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
     <!-- javs script code  -->
 <script>
     function fillProgressBars() {

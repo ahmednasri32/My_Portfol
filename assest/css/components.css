@@ -1,8 +1,11 @@
 :root {
-    --bg-grey-color: #eee;
-    --bg-white-color:white;
-    --bg-blue-dark-color: #171120;
-    --br-border-radius: 8px;
+    --primery-color:#355dff;
+    --white-color:white;
+    --grey-color: #eee;
+    --white-color:white;
+    --blue-dark-color: #171120;
+    --border-radius: 5px;
+    --border-radius: 8px;
 }
 /* main rules */
 * {
@@ -21,6 +24,7 @@
 }
 .cntr {
     align-items: center;
+    justify-content: center;
 }
 .between {
     justify-content: space-between;
@@ -33,20 +37,44 @@
 }
 /* color  */
 .bg-white {
-    background-color: var(--bg-white-color);
+    background-color: var(--white-color);
 }
 .bg-grey {
-    background-color: var(--bg-grey-color);
+    background-color: var(--grey-color);
 }
 .bg-b-dark {
-    background-color: var(--bg-blue-dark-color);
+    background-color: var(--blue-dark-color);
+}
+.bg-blue {
+    background-color: var(--primery-color);
+}
+.blue {
+    color: var(--primery-color);
+}
+.white {
+    color: var(--white-color);
 }
 /* padding and margin  */
 .p-10 {
     padding: 10px;
 }
+.p-16 {
+    padding: 16px;
+}
+.pt-10 {
+    padding-top:10px ;
+}
+.pt-20 {
+    padding-top:20px ;
+}
 .pt-15 {
     padding-top:15px ;
+}
+.pt-30 {
+    padding-top:30px ;
+}
+.pb-10 {
+    padding-bottom:10px ;
 }
 .pb-15 {
     padding-bottom:15px ;
@@ -54,11 +82,11 @@
 .pb-20 {
     padding-bottom:20px ;
 }
-.pt-30 {
-    padding-top:30px ;
-}
 .pb-30 {
     padding-bottom:30px ;
+}
+.m-20 {
+    margin: 20px;
 }
 .mt-10 {
     margin-top: 10px;
@@ -74,9 +102,20 @@
 }
 /* padding and margin  */
 /* border  */
-.br-8 {
-    border-radius: var(--br-border-radius);
+.br-5 {
+    border-radius: var(--border-radius);
 }
+.br-8 {
+    border-radius: var(--border-radius);
+}
+/* width and height  */
+.h-full {
+    height: 100vh;
+}
+.m-full {
+    height: 50vh;
+}
+/* width and height  */
 /* border  */
 /* color  */
 /* component styles */
